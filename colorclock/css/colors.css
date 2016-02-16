@@ -1,0 +1,34 @@
+@font-face {
+	font-family: Aurebesh;
+	src: url(../fonts/aurebesh.ttf)
+	
+}
+
+.absolute-center {
+    /* width: 50%; */
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+#hex {
+    font-family: Aurebesh;
+    font-size: 4.5em;
+    display: block;
+    min-width: 200px;
+    font-weight: 100;
+}
+
+span[class^="char"] {
+    display: inline-block;
+    width: 15px;
+    text-align:center;
+}
