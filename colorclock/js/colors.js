@@ -2,7 +2,7 @@ $(document).ready( function() {
 
 var color;
 var nightmode = false;
-var vibrantmode = false;
+var vibrantmode = true;
 
 function refreshData() {
     changeColor(getColor(vibrantmode));
@@ -35,6 +35,11 @@ function getColor(vibrantMode) {
   if (vibrantMode) {
     //Vibrant mode - convert to full-range colors & return
 
+    h = Math.round(h * 11.09) // converts 0-23 to 0-255
+    m = Math.round(m * 4.32)  // converts 0-59 to 0-255
+    s = Math.round(s * 4.32)
+
+    return '#'+h+m+s;
   } else {
     //Not vibrant mode - return limited range colors.
     return '#'+h+m+s;
@@ -53,5 +58,5 @@ function changeColor(color) {
 }
 
 // Run the script.
-refreshData(); // execute function
+refreshData();
 });
