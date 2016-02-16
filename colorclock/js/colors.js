@@ -48,11 +48,11 @@ function getColor(vibrantMode) {
 
 function changeColor(color) {
 	if (!nightmode){
-		$("body").animate({backgroundColor : color}, 500);
-		$("#hex").animate({color : '#ffffff'}, 500);
+		$("body").animate({backgroundColor : color}, {duration: 500, queue: false});
+		$("#hex").animate({color : '#ffffff'}, {duration: 400, queue: false});
 	} else {
-		$("body").animate({backgroundColor : '#000000'}, 500);
-		$("#hex").animate({color : color}, 500);
+		$("body").animate({backgroundColor : '#000000'}, {duration: 500, queue: false});
+		$("#hex").animate({color : color}, {duration: 400, queue: false});
 	}
 
 }
