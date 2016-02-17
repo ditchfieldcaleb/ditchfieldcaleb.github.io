@@ -1,7 +1,7 @@
 @font-face {
 	font-family: Aurebesh;
 	src: url(../fonts/Aurebesh.ttf)
-	
+
 }
 
 .absolute-center {
@@ -25,10 +25,4 @@
     display: block;
     min-width: 200px;
     font-weight: 100;
-}
-
-span[class^="char"] {
-    display: inline-block;
-    width: 15px;
-    text-align:center;
 }
