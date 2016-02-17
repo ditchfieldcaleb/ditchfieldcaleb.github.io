@@ -7,8 +7,7 @@ var currentFont = 1;
 
 function refreshData() {
     changeColor(getColor(vibrantmode), false);
-
-
+    
     $("#hex").text(getColor(vibrantmode));
 
     var currentColor = getColor(false);
