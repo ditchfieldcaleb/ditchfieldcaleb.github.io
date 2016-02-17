@@ -1,7 +1,16 @@
 @font-face {
-	font-family: Aurebesh;
-	src: url(../fonts/Aurebesh.ttf)
+		font-family: Aurebesh;
+		src: url(../fonts/Aurebesh.ttf);
+}
 
+@font-face {
+		font-family: VT323;
+		src: url(../fonts/VT323-Regular.ttf);
+}
+
+@font-face {
+		font-family: UbuntuMono;
+		src: url(../fonts/UbuntuMono-Regular.ttf);
 }
 
 .absolute-center {
@@ -19,8 +28,8 @@
     transform: translate(-50%,-50%);
 }
 
-#hex {
-    font-family: Aurebesh;
+#hex, #time, #hotkeys {
+    font-family: UbuntuMono;
     font-size: 4.5em;
     display: block;
     min-width: 200px;

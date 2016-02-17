@@ -9,7 +9,7 @@
 	<meta name="author" content="Caleb Ditchfield">
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-	<!--<link rel="stylesheet" href="css/w3.css">-->
+	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/colors.css">
 
 	<!-- Jquery -->
@@ -20,9 +20,16 @@
 </head>
 
 <body>
+	<div class="w3-content" id="hotkeys">
+			<p class="w3-tiny">N - toggle night mode</p>
+			<p class="w3-tiny">V - toggle full-range colors</p>
+			<p class="w3-tiny">F - cycle fonts</p>
+			<p class="w3-tiny">H - show/hide this</p>
+	</div>
 	<div class="w3-content" id="theContent">
-		<div class="absolute-center">
-			<p class="w3-jumbo" id="hex">12:12:12</p>
+		<div class="absolute-center w3-center">
+			<p class="w3-jumbo" id="time">12:12:12</p>
+			<p class="w3-xxlarge" id="hex">#12:12:!2</p>
 		</div>
 	</div>
 
